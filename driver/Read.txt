@@ -1,0 +1,10 @@
+Os driver usados nesse projeto, são correspondentes a versão atual dos meus
+browsers.
+por tanto ao executar o mesmo código em outras maquinas pode dar erro na
+versão dos drivers dos browsers.
+
+
+também foi configurado na variáveis de Ambiente do windowns no path.
+Painel de Controle\Sistema e Segurança\Sistema
+Configurações avançadas
+variáveis de Ambiente

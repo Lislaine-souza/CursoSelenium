@@ -139,7 +139,7 @@ public class TesteCampoTreinamento {
 	}
 	
 	@Test
-//  usamos @ignore para o teste não ser executado.
+//  usamos @ignore para o teste não ser executado
 //  @Ignore
 	public void deveInteragirComLinks() {
 		WebDriver driver = new ChromeDriver();

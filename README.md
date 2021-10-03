@@ -15,5 +15,5 @@ WebDrive JAVA
 <li>Verificar se foi cadastrado com sucesso.</li>
 </ul>
 
-
+![basic auth](https://github.com/Lislaine-souza/CursoSelenium/blob/main/doc/TesteCadastro.gif)
 

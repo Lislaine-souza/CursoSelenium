@@ -12,7 +12,7 @@ public class CadastroComSucesso {
 	@Test
 	public void DeveEfetuarTodoCadastro() {
 		WebDriver driver = new ChromeDriver();
-		driver.manage().window().setSize(new Dimension(1200, 1000));
+		driver.manage().window().setSize(new Dimension(850, 1200));
 		driver.get("file:///" + System.getProperty("user.dir") + "/src/main/resources/componentes.html");
 		
 //		Preenche o campo nome e verifica
@@ -61,6 +61,8 @@ public class CadastroComSucesso {
 		Assert.assertTrue(driver.findElement(By.id("descComida")).getText().endsWith("Carne Pizza"));
 		Assert.assertTrue(driver.findElement(By.id("descEscolaridade")).getText().endsWith("especializacao"));
 		Assert.assertTrue(driver.findElement(By.id("descEsportes")).getText().endsWith("Natacao Corrida"));
+		
+		driver.findElement(By.id("elementosForm:sugestoes")).sendKeys("\nFIM DO TESTE :D");
 		
 	}
 

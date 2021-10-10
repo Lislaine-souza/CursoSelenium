@@ -11,8 +11,8 @@ public class TesteGoogle {
 	public void teste() {
 		//System.setProperty("webdriver.gecko.driver", "C:\\Github\\Selenium-iniciante02\\driver\\geckodriver.exe");
 		//WebDriver driver = new FirefoxDriver();
-		//WebDriver driver = new ChromeDriver();
-		WebDriver driver = new InternetExplorerDriver();
+		WebDriver driver = new ChromeDriver();
+		//WebDriver driver = new InternetExplorerDriver();
 		driver.get("http://www.google.com");
 		Assert.assertEquals("Google", driver.getTitle());
 	}

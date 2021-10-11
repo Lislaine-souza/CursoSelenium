@@ -40,6 +40,8 @@
 
 * Esportes: o usuário não pode escolher a  opção o que é esporte? com alguma opção de esporte.(corrida,futbol,etc...)
 
+![basic auth](https://github.com/Lislaine-souza/CursoSelenium/blob/main/doc/desafio02.gif)
+
 
 
 

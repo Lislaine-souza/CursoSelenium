@@ -1,4 +1,4 @@
-> Status do Projeto: Em desenvolvimento :warning:
+> Em desenvolvimento :warning:
 
 # CursoSelenium
 <h3>WebDrive JAVA</h3>

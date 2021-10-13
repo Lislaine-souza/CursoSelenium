@@ -1,6 +1,6 @@
 > Em desenvolvimento :warning:
 
-# CursoSelenium
+# Curso Selenium
 <h3>WebDrive JAVA</h3>
 
 1. Primeiro desafio

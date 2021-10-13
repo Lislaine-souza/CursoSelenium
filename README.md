@@ -90,7 +90,7 @@ Temos duas maneira de melhorar o código.
    @Before -  vai ser executado antes de cada caso de teste.<br>
    @After  -  vai ser executado depois de cada caso de teste.
   
-   Assim tornando o código ainda mais dry, enchuto e eficiente.
+   Assim tornando o código ainda mais dry e eficiente.
   
 <br>
 <br>

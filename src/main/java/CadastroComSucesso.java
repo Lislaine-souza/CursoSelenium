@@ -1,4 +1,6 @@
+import org.junit.After;
 import org.junit.Assert;
+import org.junit.Before;
 import org.junit.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Dimension;
@@ -9,11 +11,22 @@ import org.openqa.selenium.support.ui.Select;
 
 public class CadastroComSucesso {
 	
-	@Test
-	public void DeveEfetuarTodoCadastro() {
-		WebDriver driver = new ChromeDriver();
+private WebDriver driver;
+	
+	@Before
+	public void inicio(){
+		driver = new ChromeDriver();
 		driver.manage().window().setSize(new Dimension(850, 1200));
 		driver.get("file:///" + System.getProperty("user.dir") + "/src/main/resources/componentes.html");
+	}
+	
+	@After
+	public void fim() {
+		driver.close();
+	}
+	
+	@Test
+	public void DeveEfetuarTodoCadastro() {
 		
 //		Preenche o campo nome e verifica
 		driver.findElement(By.id("elementosForm:nome")).sendKeys("Lislaine");

@@ -128,6 +128,12 @@ public class TesteRegrasDeNegocio {
 
 </p>
 
+4. DSL - línguagens próprias para um problema. (Métodos especificos)
+
+Criei uma Class para fazer todos os métodos que fossem necessário para o projeto, assim o código fica mais legível e organizado.
+
+![basic auth](https://github.com/Lislaine-souza/CursoSelenium/blob/main/doc/fotoDSL.png)
+
 
 
 

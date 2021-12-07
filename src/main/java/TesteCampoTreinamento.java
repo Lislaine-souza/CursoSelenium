@@ -41,6 +41,14 @@ private DSL dsl;
 	}
 	
 	@Test
+	public void testeTextFieldDuplo(){
+		dsl.escreve("elementosForm:nome", "Lis");
+		Assert.assertEquals("Lis", dsl.obterValorCampo("elementosForm:nome"));
+		dsl.escreve("elementosForm:nome", "Souza");
+		Assert.assertEquals("Souza", dsl.obterValorCampo("elementosForm:nome"));
+	}
+	
+	@Test
 	public void deveInteragirComTextArea() {
 		
 		dsl.escreve("elementosForm:sugestoes", "teste area");

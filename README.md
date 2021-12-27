@@ -143,7 +143,7 @@ Criei uma Class para fazer todos os métodos que fossem necessário para o proje
 PageObject é um padrão de design que ajuda a aprimorar a manutenção de testes e reduzir a duplicação de código, 
 também pode ser utilizado para descrever e documentar o fluxo de uma aplicação.
 
-![basic auth](https://github.com/Lislaine-souza/CursoSelenium/blob/main/doc/fotoPAGE.png)
+
 
 
 

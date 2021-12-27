@@ -9,7 +9,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.Select;
 
-public class TesteCampoTreinamento {
+public class CampoTreinamentoTeste {
 	
 private WebDriver driver;
 private DSL dsl;

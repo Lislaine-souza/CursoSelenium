@@ -1,3 +1,4 @@
+import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -11,6 +12,8 @@ public class DSL {
 		super();
 		this.driver = driver;
 	}
+	
+	/********* TextField e TextArea ************/
 	
 	public void escreve(By by,String texto) {
 		driver.findElement(by).clear();
@@ -26,6 +29,8 @@ public class DSL {
 		return driver.findElement(By.id(id_campo)).getAttribute("value");
 	}
 	
+	/********* Radio e Check ************/
+	
 	public void clicarRadio(String id) {
 		driver.findElement(By.id(id)).click();
 	}
@@ -33,6 +38,8 @@ public class DSL {
 	public boolean isRadioMarcado(String id) {
 		return driver.findElement(By.id(id)).isSelected();
 	}
+	
+	/********* Combo ************/
 	
 	public void selecionarCombo(String id, String valor) {
 		WebElement element = driver.findElement(By.id(id));
@@ -47,13 +54,19 @@ public class DSL {
 		
 	}
 	
+	/********* Botao ************/
+	
 	public void clicarBotao(String id) {
 		driver.findElement(By.id(id)).click();
 	}
 	
+	/********* Link ************/
+	
 	public void clicarLink(String link) {
 		driver.findElement(By.id(link)).click();
 	}
+	
+	/********* Textos ************/
 	
 	public String obterTexto(By by) {
 		return driver.findElement(by).getText();
@@ -62,6 +75,21 @@ public class DSL {
 	
 	public String obterTexto(String id) {
 		return obterTexto(By.id(id));
+		
+	}
+	
+	/********* Alerts ************/
+	
+	public String alertaObterTexto(){
+		Alert alert = driver.switchTo().alert();
+		return alert.getText();
+	}
+
+	public String alertaObterTextoEAceita(){
+		Alert alert = driver.switchTo().alert();
+		String valor = alert.getText();
+		alert.accept();
+		return valor;
 		
 	}
 }

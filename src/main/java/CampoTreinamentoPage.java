@@ -21,6 +21,10 @@ public class CampoTreinamentoPage {
 		dsl.clicarRadio("elementosForm:sexo:1");
 	}
 	
+	public void setSexoMasculino() {
+		dsl.clicarRadio("elementosForm:sexo:0");
+	}
+	
 	public void setComidaPizza() {
 		dsl.clicarRadio("elementosForm:comidaFavorita:2");
 	}

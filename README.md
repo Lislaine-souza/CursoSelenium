@@ -134,7 +134,6 @@ Criei uma Class para fazer todos os métodos que fossem necessário para o proje
 
 ![basic auth](https://github.com/Lislaine-souza/CursoSelenium/blob/main/doc/fotoDSL.png)
 
-```
 
 </p>
 

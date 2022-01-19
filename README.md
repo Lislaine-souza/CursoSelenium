@@ -144,6 +144,24 @@ também pode ser utilizado para descrever e documentar o fluxo de uma aplicaçã
 
 ![basic auth](https://github.com/Lislaine-souza/CursoSelenium/blob/main/doc/fotoPAGE.png)
 
+6. Teste Parametrizável 
+
+Fazer uma classe genérica, que possa ser usada em várias aplicações.<br>
+O nome dessa técnica é Data Driven Testing (testes orientados a dados).
+
+Criamos um método estático que nos retorna uma coleção de arrays de objetos.
+retornando a matriz de objetos que mapeamos.
+
+``` java
+public static Collection<Object[]> getCollection(){
+		return Arrays.asList(new Object [] [] {
+			{},
+			{},
+		});
+	}
+
+
+```
 
 
 

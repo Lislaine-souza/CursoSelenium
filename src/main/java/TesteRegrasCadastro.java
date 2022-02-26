@@ -22,7 +22,7 @@ public class TesteRegrasCadastro {
 	
 	@Parameter
 	public String nome;
-	@Parameter(value=1)
+	@Parameter(value=1) 
 	public String sobrenome;
 	@Parameter(value=2)
 	public String sexo;
@@ -51,6 +51,10 @@ public class TesteRegrasCadastro {
 	public static Collection<Object[]> getCollection(){
 		return Arrays.asList(new Object [] [] {
 			{"", "", "", Arrays.asList(), new String[] {}, "Nome eh obrigatorio"},
+			{"Lislaine", "", "", Arrays.asList(), new String[] {}, "Sobrenome eh obrigatorio"},
+			{"Lislaine", "souza", "", Arrays.asList(), new String[] {}, "Sexo eh obrigatorio"},
+			{"Lislaine", "souza", "Feminino", Arrays.asList("Carne", "vegetariano"), new String[] {}, "Tem certeza que voce eh vegetariano?"},
+			{"Lislaine", "souza", "Feminino", Arrays.asList("Carne"), new String[] {"Corrida", "O que eh esporte?"}, "Voce faz esporte ou nao?"},
 						
 		});
 	}
@@ -62,7 +66,8 @@ public void DeveValidarRegras() {
 		page.setSobrenome(sobrenome);
 		if (sexo.equals("Feminino")) {
 			page.setSexoFeminino();
-		}else {
+		}
+		if (sexo.equals("Masculino")){
 			page.setSexoMasculino();
 		}
 		if(comidas.contains("Carne")) page.setComidaCarne();
@@ -71,7 +76,7 @@ public void DeveValidarRegras() {
 			
 		page.setEsportes(esportes);
 		page.setCadastrar();
-		System.out.println();
+		System.out.println(msg);
 		
 		driver.switchTo().alert();
 		Assert.assertEquals(msg, driver.switchTo().alert().getText());
